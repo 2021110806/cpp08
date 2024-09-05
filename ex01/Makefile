@@ -1,7 +1,7 @@
 CPP = c++
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 NAME = ex01
-SRCS = main.cpp span.cpp
+SRCS = main.cpp Span.cpp
 HEADER = Span.hpp
 OBJS = $(SRCS:.cpp=.o)
 

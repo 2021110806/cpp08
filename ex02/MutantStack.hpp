@@ -1,8 +1,6 @@
 #ifndef MUTANTSTACK_HPP
 # define MUTANTSTACK_HPP
 #include <stack>
-#include <deque>
-#include <algorithm>
 #include <iostream>
 
 template<typename T>
@@ -28,10 +26,10 @@ class MutantStack : public std::stack<T>
 		iterator begin() { return std::stack<T>::c.begin(); }
 		const_iterator begin() const { return std::stack<T>::c.begin(); }
 		iterator end() { return std::stack<T>::c.end(); }
-		const_iterator end() const { return std::stack<T>::c.rend(); }
+		const_iterator end() const { return std::stack<T>::c.end(); }
 		iterator rbegin() { return std::stack<T>::c.begin(); }
 		const_iterator rbegin() const { return std::stack<T>::c.rbegin(); }
-		iterator rend() { return std::stack<T>::c.end(); }
+		iterator rend() { return std::stack<T>::c.rend(); }
 		const_iterator rend() const { return std::stack<T>::c.rend(); }
 };
 

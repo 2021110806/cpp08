@@ -1,6 +1,6 @@
 #ifndef SPAN_HPP
 #define SPAN_HPP
-#define std::set<int>::iterator ITERATOR
+#define ITERATOR std::set<int>::iterator
 #include <iostream>
 #include <exception>
 #include <set>
@@ -19,7 +19,7 @@ class Span
 		unsigned long long longestSpan();
 		unsigned int getSize() const;
 		void addNumber(int n);
-		void addNumbers(int n);
+		void addNumbers(ITERATOR begin, ITERATOR end);
 		class GeneralException: public std::exception {
 			const char *what() const throw() {
 				return "Error";
